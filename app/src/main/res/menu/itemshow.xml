@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/display_reality"
+        android:title="Reality"
+        android:icon="@drawable/display_reality"
+        />
+    <item
+        android:id="@+id/love_messages"
+        android:title="Love and Relations "
+        android:icon="@drawable/love_message"
+        />
+    <item
+        android:id="@+id/inspirations"
+        android:title="Inspirations"
+        android:icon="@drawable/others"
+        />
+
+</menu>
