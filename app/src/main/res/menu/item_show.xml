@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        app:showAsAction="always"
         android:id="@+id/display_reality"
         android:title="Reality"
         android:icon="@drawable/display_reality"
         />
     <item
+        app:showAsAction="always"
         android:id="@+id/love_messages"
         android:title="Love and Relations "
         android:icon="@drawable/love_message"
         />
     <item
+        app:showAsAction="always"
         android:id="@+id/inspirations"
         android:title="Inspirations"
         android:icon="@drawable/others"
