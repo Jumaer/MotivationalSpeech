@@ -23,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView =(BottomNavigationView)findViewById(R.id.bottom_navigation_display) ;
         if (savedInstanceState==null){
             getSupportFragmentManager().beginTransaction().replace(R.id.display_frame,new Reality()).commit();
-
-
-
         }
 
         // bottom navigation item selection code...
@@ -48,38 +45,18 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.inspirations:
                         fragment = new Inspirations();
-
-
-
                 }
-
                     return loadFragment(fragment);
-
                 }
 
                 catch (Exception e){
-
                 }
 
-
-
-
                 getSupportFragmentManager().beginTransaction().replace(R.id.display_frame,fragment).commit();
-
-
-
-
-
                 return false;
             }
 
-
-
         });
-
-
-
-
     }
     private boolean loadFragment(Fragment fragment) {
         if(fragment != null) {

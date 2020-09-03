@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textSize="19dp"
+                android:layout_centerInParent="true"
+                android:textColor="#120C0C"
+                android:text="Relation and Love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
