@@ -4,13 +4,13 @@
     <item
         app:showAsAction="always"
         android:id="@+id/display_reality"
-        android:title="Reality"
+        android:title="Truth"
         android:icon="@drawable/display_reality"
         />
     <item
         app:showAsAction="always"
         android:id="@+id/love_messages"
-        android:title="Love and Relations "
+        android:title="Relations "
         android:icon="@drawable/love_message"
         />
     <item

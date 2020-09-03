@@ -9,11 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.motivationalspeech.R;
+
 public class Inspirations extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        View vInspirations = inflater.inflate(R.layout.inspirations,container,false);
+        return vInspirations;
     }
 }
