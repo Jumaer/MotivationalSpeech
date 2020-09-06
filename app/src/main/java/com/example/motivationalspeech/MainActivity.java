@@ -61,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
     private boolean loadFragment(Fragment fragment) {
         if(fragment != null) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right);
-            transaction.add(R.id.display_frame, fragment);
+            transaction.setCustomAnimations(R.anim.slide_in_bottom, R.anim.do_nothing, R.anim.do_nothing, R.anim.slide_out_bottom);
+            transaction.replace(R.id.display_frame, fragment,"TAG");
+            transaction.addToBackStack("TAG");
             transaction.commit();
             return true;
         }
