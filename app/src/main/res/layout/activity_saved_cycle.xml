@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#035B3F"
+    tools:context=".SavedCycle">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="24dp">
+
+        <ImageView
+            android:id="@+id/back_to_previous"
+            android:src="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/core_text_mine"
+            android:background="@drawable/layout_bg"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:hint=" Write here about your personal motivational speech,that inspires you most.. "
+            android:textColor="#050505"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/back_to_previous"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+         <EditText
+             android:layout_toRightOf="@id/back_to_previous"
+             android:id="@+id/writer"
+             android:layout_centerHorizontal="true"
+             android:gravity="center"
+             android:textSize="10sp"
+             android:hint="Said By..( Can Write Unknown)"
+             android:background="@drawable/layout_bg"
+             android:layout_marginLeft="9dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="7dp"
+             android:layout_below="@id/core_text_mine"
+             android:layout_width="match_parent"
+             android:layout_height="30dp"/>
+        <Button
+            android:id="@+id/button_Click"
+            android:visibility="visible"
+            android:text="Save"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/writer"
+            android:background="@drawable/layout_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

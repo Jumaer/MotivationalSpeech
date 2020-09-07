@@ -2,11 +2,15 @@ package com.example.motivationalspeech;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.motivationalspeech.fragments_packages.Inspirations;
 import com.example.motivationalspeech.fragments_packages.Love_Relations;
@@ -18,6 +22,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
   //  public boolean onBackButtonPressed = false;
+
+    CardView CARD_CLICK_TO_SAVED_DATA_ACTIVITY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +70,20 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
+
+
+      CARD_CLICK_TO_SAVED_DATA_ACTIVITY = findViewById(R.id.click_to_add_personal);
+      CARD_CLICK_TO_SAVED_DATA_ACTIVITY.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent intent = new Intent(MainActivity.this, SavedCycle.class);
+              startActivity(intent);
+              finishAffinity();
+              ActivityCompat.finishAffinity(MainActivity.this);
+              overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+          }
+      });
 
     }
 
