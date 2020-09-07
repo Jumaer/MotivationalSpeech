@@ -13,8 +13,11 @@ import com.example.motivationalspeech.fragments_packages.Love_Relations;
 import com.example.motivationalspeech.fragments_packages.Reality;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+  //  public boolean onBackButtonPressed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,35 +41,32 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.display_reality:
                         fragment = new Reality();
 
+
                         break;
                     case R.id.love_messages:
                         fragment = new Love_Relations();
 
+
                         break;
                     case R.id.inspirations:
                         fragment = new Inspirations();
+
                 }
-                    return loadFragment(fragment);
+
                 }
 
                 catch (Exception e){
                 }
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.display_frame,fragment).commit();
+                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.slide_in_bottom,R.anim.do_nothing,R.anim.do_nothing,R.anim.slide_out_bottom).replace(R.id.display_frame,fragment).commit();
                 return false;
             }
 
         });
+
+
     }
-    private boolean loadFragment(Fragment fragment) {
-        if(fragment != null) {
-            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.setCustomAnimations(R.anim.slide_in_bottom, R.anim.do_nothing, R.anim.do_nothing, R.anim.slide_out_bottom);
-            transaction.replace(R.id.display_frame, fragment,"TAG");
-            transaction.addToBackStack("TAG");
-            transaction.commit();
-            return true;
-        }
-        return false;
-    }
-    }
+
+
+
+}

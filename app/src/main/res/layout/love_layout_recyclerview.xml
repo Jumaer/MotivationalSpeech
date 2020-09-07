@@ -13,47 +13,55 @@
         android:layout_margin="3dp"
         android:layout_width="match_parent"
         android:layout_height="288dp">
-        <ImageView
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/love_relations"
-            android:layout_width="match_parent"
-            android:id="@+id/card_image2"
-            android:layout_height="match_parent" />
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/relative_love_relation_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/love_relations"
+                android:layout_width="match_parent"
+                android:id="@+id/card_image2"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-            <TextView
-                android:textStyle="italic"
-                android:gravity="center"
-                android:layout_marginLeft="3dp"
-                android:id="@+id/love_relations_speech"
-                android:textSize="15sp"
-                android:layout_centerInParent="true"
-                android:textColor="#FAF5F5"
-                android:text="Love Relations Text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <TextView
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/love_relations_speech"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FAF5F5"
+                    android:text="Love Relations Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
 
 
-            <TextView
-                android:gravity="center"
-                android:drawableLeft="@drawable/write_start"
-                android:textStyle="bold"
-                android:id="@+id/love_relations_speaker"
-                android:textColor="#FFFFFF"
-                android:text="Speaker"
-                android:textSize="10sp"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/love_relations_speech"
-                android:layout_marginTop="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <TextView
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/write_start"
+                    android:textStyle="bold"
+                    android:id="@+id/love_relations_speaker"
+                    android:textColor="#FFFFFF"
+                    android:text="Speaker"
+                    android:textSize="10sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/love_relations_speech"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
 
         </RelativeLayout>
+
 
 
 

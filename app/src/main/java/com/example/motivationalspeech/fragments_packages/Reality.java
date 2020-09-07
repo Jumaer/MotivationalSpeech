@@ -1,6 +1,7 @@
 package com.example.motivationalspeech.fragments_packages;
 
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,9 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.motivationalspeech.R;
 import com.example.motivationalspeech.adapter_package.AdapterReality;
+
 import com.example.motivationalspeech.modelpackage.RealityModel;
 
-public class Reality extends Fragment {
+public class Reality extends Fragment  {
     public Reality(){
 
     }
@@ -27,6 +29,8 @@ public class Reality extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View vReality = inflater.inflate(R.layout.reality,container,false);
+
+
         reality_recycle_display= (RecyclerView) vReality.findViewById(R.id.recycle_reality);
         adapterReality = new AdapterReality( getActivity(), RealityModel.generate_all_reality_models());
         GridLayoutManager gl_mex = new GridLayoutManager(getContext(),2);
@@ -34,7 +38,14 @@ public class Reality extends Fragment {
         reality_recycle_display.setHasFixedSize(true);
         reality_recycle_display.setItemViewCacheSize(20);
         reality_recycle_display.setAdapter(adapterReality);
-        return vReality;
+
+
+      return  vReality;
+
 
     }
+
+
+
+
 }

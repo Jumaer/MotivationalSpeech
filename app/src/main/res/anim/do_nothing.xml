@@ -13,7 +13,7 @@
         android:fromAlpha="1.0"
         android:toAlpha="0.0"
         android:duration="500"
-        android:startOffset="500"
+        android:startOffset="600"
         />
 
 </set>
