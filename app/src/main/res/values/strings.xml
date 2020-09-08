@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CINTA</string>
+    <string name="our"> We are trying to start Android,IOS,Web and other types of
+    applications development for business and social services. This app can motivate you and can show the
+    reality, we believe. The app is on initial development stages but in future you can get the updated features. Stay with us.</string>
+    <string name="mydetail"> Developed By \n Md. Jumaer Ahamed \n  C/N - +8801830718882 \n jumaercse@gmail.com</string>
+
 </resources>

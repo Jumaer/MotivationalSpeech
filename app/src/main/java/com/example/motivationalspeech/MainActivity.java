@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
   //  public boolean onBackButtonPressed = false;
 
     CardView CARD_CLICK_TO_SAVED_DATA_ACTIVITY;
+    CardView click_to_see_myself_detail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +79,20 @@ public class MainActivity extends AppCompatActivity {
           @Override
           public void onClick(View view) {
               Intent intent = new Intent(MainActivity.this, SavedCycle.class);
+              startActivity(intent);
+              finishAffinity();
+              ActivityCompat.finishAffinity(MainActivity.this);
+              overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+          }
+      });
+
+
+
+      click_to_see_myself_detail = findViewById(R.id.click_to_see_myself_detail);
+      click_to_see_myself_detail.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent intent = new Intent(MainActivity.this, Ourself.class);
               startActivity(intent);
               finishAffinity();
               ActivityCompat.finishAffinity(MainActivity.this);

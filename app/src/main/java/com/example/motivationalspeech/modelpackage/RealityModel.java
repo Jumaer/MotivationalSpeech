@@ -87,6 +87,7 @@ public class RealityModel {
 
         realityModels.add(new RealityModel("If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough.","Oprah Winfrey"));
         realityModels.add(new RealityModel("None of us is as smart as all of us.","Ken Blanchard"));
+        realityModels.add(new RealityModel("Keeping secrets is a survival tactic.","Kaede Lazares, Pathline"));
         realityModels.add(new RealityModel("I can’t change the direction of the wind, but I can adjust my sails to always reach my destination. ","Jimmy Dean"));
         realityModels.add(new RealityModel("Believe you can and you’re halfway there.","Theodore Roosevelt"));
         realityModels.add(new RealityModel("To handle yourself, use your head; to handle others, use your heart. "," Eleanor Roosevelt"));

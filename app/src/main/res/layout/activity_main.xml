@@ -14,14 +14,40 @@
 
     </FrameLayout>
 
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="#035B3F"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/click_to_add_personal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/click_to_see_myself_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:drawableLeft="@drawable/myself"
+            android:textStyle="bold"
+            android:id="@+id/click_to_see_dev_detail"
+            android:textColor="#FFFFFF"
+            android:text="Ourself"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Inspirational_speech"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        app:cardCornerRadius="1dp"
+        app:cardCornerRadius="2dp"
         app:cardElevation="2dp"
         app:cardBackgroundColor="#035B3F"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_alignParentRight="true"
         android:id="@+id/click_to_add_personal"
         android:layout_width="wrap_content"
@@ -36,7 +62,7 @@
             android:textSize="15sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/Inspirational_speech"
-          android:layout_margin="5dp"
+           android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#035B3F"
+    tools:context=".Ourself">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/leave_button"
+            android:textSize="15sp"
+            android:textColor="#ffff"
+            android:text="BACK"
+            android:background="@drawable/button"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
+
+
+        <RelativeLayout
+            android:background="#2323"
+            android:layout_above="@id/leave_button"
+            android:layout_below="@id/add_imageButton"
+            android:layout_marginBottom="15dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_alignParentTop="true"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:id="@+id/display_cont_personal_info"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:text="@string/our"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="@string/mydetail"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_margin="30dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/txtdev_personal"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:lines="5"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+
+        <ImageButton
+            android:layout_margin="15dp"
+            android:background="#232323"
+            android:adjustViewBounds="true"
+            android:id="@+id/add_imageButton"
+            android:src="@drawable/add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

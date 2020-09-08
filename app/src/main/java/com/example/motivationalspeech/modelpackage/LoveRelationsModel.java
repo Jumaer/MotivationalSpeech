@@ -74,7 +74,7 @@ public class LoveRelationsModel {
         relationsModels.add(new LoveRelationsModel("We loved with a love that was more than love","Edgar Allan Poe"));
         relationsModels.add(new LoveRelationsModel("You know you're in love when you can't fall asleep because reality is finally better than your dreams..","Dr. Seuss #RelationshipGoals "));
         relationsModels.add(new LoveRelationsModel("You and I, it's as though we have been taught to kiss in heaven and sent down to earth together, to see if we know what we were taught"," Boris Pasternak, Doctor Zhivago"));
-        relationsModels.add(new LoveRelationsModel("Marion and I have not climbed Mount Everest or written a great American novel. But we've had the joy of raising two wonderful kids, and watching them and their friends grow up into loving adults. And now, we're gonna have the pleasure of watching them pass that love onto their children. And I guess no man or woman could ask for anything more.","  Happy Days, #RelationshipGoals "));
+        relationsModels.add(new LoveRelationsModel("When someone loves you, the way they talk about you is different. You feel safe and comfortable." , " Jess C. Scott"));
         relationsModels.add(new LoveRelationsModel("I think we dream so we don't have to be apart for so long. If we're in each other's dreams, we can be together all the time."," A.A. Milne, Winnie-the-Pooh"));
 
 
@@ -101,6 +101,7 @@ public class LoveRelationsModel {
 
 
         relationsModels.add(new LoveRelationsModel("Have enough courage to trust love one more time and always one more time.","Maya Angelou"));
+        relationsModels.add(new LoveRelationsModel("Truth is everybody is going to hurt you: you just gotta find the ones worth suffering for.","Bob Marley"));
         relationsModels.add(new LoveRelationsModel("Love alone can rekindle life.","Henri Frederic Amiel"));
         relationsModels.add(new LoveRelationsModel("Love is a game that two can play and both can win.","Eva Gabor"));
         relationsModels.add(new LoveRelationsModel("To know when to go away and when to come closer is the key to any lasting relationship.","Doménico Cieri Estrada"));
