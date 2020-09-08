@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="1dp"
+        android:background="@drawable/backgroundlayout"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete this lesson"
+            android:textSize="19sp"
+            android:textColor="#0B0B0B"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#FCFDFD"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:drawableLeft="@drawable/back2home"
+            android:gravity="center"
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/02/2020"
+            android:paddingRight="10dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button"
+            android:textColor="#F3F1F1"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

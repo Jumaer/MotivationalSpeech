@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="18dp"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="24dp">
 
@@ -26,43 +26,51 @@
             android:layout_height="40dp"/>
         <EditText
             android:padding="10dp"
-            android:id="@+id/core_text_mine"
+            android:id="@+id/et_entry"
             android:background="@drawable/layout_bg"
             android:textStyle="italic"
             android:gravity="center"
             android:textSize="16sp"
-            android:hint=" Write here your personal speech "
+            android:hint=" Start Writing.. "
             android:textColor="#050505"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="150dp"/>
-         <EditText
-             android:id="@+id/writer"
-             android:layout_centerHorizontal="true"
-             android:gravity="center"
-             android:textSize="10sp"
-             android:hint="Said By..( Can Write Unknown)"
-             android:background="@drawable/layout_bg"
-             android:layout_marginLeft="9dp"
-             android:layout_marginRight="10dp"
-             android:layout_marginTop="7dp"
-             android:layout_below="@id/core_text_mine"
-             android:layout_width="180dp"
-             android:layout_height="40dp"/>
+            android:layout_height="170dp"/>
+
         <Button
             android:textColor="#ffff"
-            android:id="@+id/button_Click"
+            android:id="@+id/btn_add"
             android:visibility="visible"
-            android:text="ADD"
-            android:layout_marginRight="12dp"
+            android:text="SAVE"
+            android:layout_marginRight="30dp"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
-            android:layout_below="@id/writer"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/et_entry"
             android:background="@drawable/button"
             android:layout_width="wrap_content"
             android:layout_height="40dp"/>
 
+      <RelativeLayout
+          android:background="#2323"
+          android:layout_marginTop="12dp"
+          android:layout_below="@id/btn_add"
+          android:layout_marginBottom="10dp"
+          android:layout_above="@id/back_to_previous"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_margin="5dp"
+              android:id="@+id/recyclerview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
+
+
+          </androidx.recyclerview.widget.RecyclerView>
+
+
+
+      </RelativeLayout>
 
 
 
